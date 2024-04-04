@@ -1,2 +1,1 @@
-# ruby_test_turn_calculator
-Rubyでターンの計算、ループからの脱却
+# README
