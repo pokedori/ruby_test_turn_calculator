@@ -2,6 +2,7 @@
 
 ## 概要
 ループを無くし軽量化を行うためのロジックを調査することになったので、その結果を残す。
+安易にループ処理をしてしまうと、大量のデータをやり取りする際に負荷がかかってしまうので気を付ける必要がある。
 
 ## ソースコード
 https://github.com/pokedori/ruby_test_turn_calculator/blob/main/app/main.rb
