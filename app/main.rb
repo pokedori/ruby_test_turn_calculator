@@ -35,7 +35,6 @@ def loop_pattern(hp_point, attack_point, heel_point)
   until hp_point <= 0
     loops_needed += 1
     hp_point -= attack_point
-    # 勝利判定
     break if hp_point <= 0
     hp_point += heel_point
   end
@@ -44,13 +43,8 @@ end
 
 # 算術パターン
 def arithmetic_pattern(hp_point, attack_point, heel_point)
-  # 1ターンの変動値
   one_floating_value = attack_point - heel_point
-
-  # 一撃で倒せる値
   last_boss_hp = hp_point - attack_point
-
-  # 一撃で倒せるまでのターン数に＋1する
   turn = (last_boss_hp.to_f / one_floating_value).ceil + 1
 end
 
