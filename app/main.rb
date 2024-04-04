@@ -3,8 +3,8 @@ WIN = "WIN"
 
 lines = ARGV
 
-# ruby main.rb "10 5 2"のようにコマンドラインから呼び出すことを想定
-# @param [String] lines ["HP 攻撃力 回復力"]
+# ruby main.rb "70 20 5"のようにコマンドラインから呼び出すことを想定
+# @param [String] lines ["70 20 5"]
 def main(lines)
   split_lines = lines[0].split.map(&:to_i)
 
@@ -13,11 +13,6 @@ def main(lines)
   attack_point = split_lines[1]
   heel_point = split_lines[2]
 
-  puts "HP #{hp_point}"
-  puts "攻撃力 #{attack_point}"
-  puts "回復力 #{heel_point}"
-
-  # 勝利判定、魔王のHPが攻撃力より低い場合は一撃で倒せる、また、攻撃力以上の回復力がある場合は倒せない
   judge = attack_point <= heel_point && attack_point < hp_point
   puts LOSE if judge
   exit if judge
