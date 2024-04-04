@@ -1,7 +1,7 @@
 # README
 
 ## 概要
-ループを無くし軽量化を行うためのロジックを調査することになったので、その結果を残す。<br>
+ループを無くし軽量化を行うためのロジックを調査することになったので、その結果を残す。
 
 ## ソースコード
 https://github.com/pokedori/ruby_test_turn_calculator/blob/main/app/main.rb
